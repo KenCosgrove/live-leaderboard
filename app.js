@@ -32,6 +32,7 @@ function cardMaker(myObj) {
   bottom.classList.add("bottom");
   left.classList.add("left");
   right.classList.add("right");
+
   // nesting
   container.appendChild(card);
   card.appendChild(top);
@@ -82,3 +83,35 @@ let testObj = {
 };
 
 cardMaker(testObj);
+
+const jeff = {
+  name: "Shrek DeSantis",
+  position: "7",
+  score: "-1",
+  thru: "11",
+  fpts: "63.7",
+  ott: "2.01",
+  app: "2.1",
+  arg: "-0.3",
+  put: "1.8",
+  t2g: "-0.36",
+  tot: "-1.34",
+};
+
+cardMaker(jeff);
+
+const conlan = {
+  name: "Christopher Hybrid",
+  position: "16",
+  score: "+2",
+  thru: "F",
+  fpts: "48.2",
+  ott: "-1.22",
+  app: "2.6",
+  arg: "-1.4",
+  put: "0.05",
+  t2g: "-1.13",
+  tot: "1.12",
+};
+
+cardMaker(conlan);
