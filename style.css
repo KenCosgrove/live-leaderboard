@@ -185,28 +185,25 @@ table {
     display: flex;
     justify-content: space-evenly;
   }
-  h3 {
-    padding: 1rem 0 0 1.5rem;
-  }
+
   .sort {
     display: flex;
-    justify-content: center;
-    padding: 0.5rem;
-    line-height: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    line-height: 1.5rem;
   }
-  .sort ul {
-    display: flex;
-    flex-wrap: wrap;
+  h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
   }
-
-  .sort ul li {
-    width: 33%;
-  }
-
-  .card ul {
+  .list {
     list-style: none;
+    display: flex;
   }
-
+  .list li {
+    padding: 0.1rem 0.6rem;
+  }
   .playerCard {
     background: lightgrey;
     display: flex;
@@ -223,7 +220,7 @@ table {
     display: flex;
     line-height: 1.5rem;
     width: 50%;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .bottom {
@@ -233,5 +230,15 @@ table {
 
   footer {
     background: green;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  footer img {
+    height: 2.5rem;
+    padding-right: 1rem;
   }
 }
