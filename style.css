@@ -210,6 +210,14 @@ table {
     margin: 0.5rem 0 0.2rem 0;
     padding: 0.3rem 0.2rem;
   }
+  .rounds button {
+    padding: 0.5rem 0.3rem;
+    background: rgb(232, 184, 108);
+    color: rgb(25, 108, 54);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
   .playerCard {
     background: lightgrey;
     display: flex;
