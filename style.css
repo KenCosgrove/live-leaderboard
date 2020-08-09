@@ -178,7 +178,7 @@ table {
     font-weight: bold;
   }
   section {
-    height: 60vh;
+    margin: 1rem auto;
   }
   .top,
   .bottom {
