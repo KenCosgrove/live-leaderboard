@@ -8,6 +8,7 @@ burger.addEventListener("click", () => {
 function cardMaker(myObj) {
   //variables
   const container = document.querySelector(".cards-container");
+  const myLeaderboard = document.querySelector(".myLeaderboard");
   const card = document.createElement("div");
   const left = document.createElement("div");
   const right = document.createElement("div");
@@ -26,12 +27,16 @@ function cardMaker(myObj) {
   const put = document.createElement("li");
   const t2g = document.createElement("li");
   const tot = document.createElement("li");
+  const add = document.createElement("button");
+  const remove = document.createElement("button");
   // classses
   card.classList.add("playerCard");
   top.classList.add("top");
   bottom.classList.add("bottom");
   left.classList.add("left");
   right.classList.add("right");
+  add.classList.add("add");
+  remove.classList.add("remove");
 
   // nesting
   container.appendChild(card);
@@ -52,6 +57,8 @@ function cardMaker(myObj) {
   sgRight.appendChild(put);
   sgRight.appendChild(t2g);
   sgRight.appendChild(tot);
+  left.appendChild(add);
+  left.appendChild(remove);
   //content
   name.textContent = myObj.name;
   score.textContent = myObj.score;
@@ -64,6 +71,23 @@ function cardMaker(myObj) {
   put.textContent = `PUT: ${myObj.put}`;
   t2g.textContent = `T2G: ${myObj.t2g}`;
   tot.textContent = `TOT: ${myObj.tot}`;
+  add.textContent = "+";
+  remove.textContent = "-";
+  //events
+
+  add.addEventListener("click", () => {
+    myLeaderboard.appendChild(card);
+    card.style.background = "slategray";
+    remove.style.display = "inherit";
+    add.style.display = "none";
+    myLeaderboard.style.border = "3px dotted green";
+  });
+  remove.addEventListener("click", () => {
+    container.appendChild(card);
+    card.style.background = "lightgray";
+    add.style.display = "inherit";
+    remove.style.display = "none";
+  });
   //return
   return card;
 }
@@ -73,7 +97,7 @@ let testObj = {
   position: "T3",
   score: "-4",
   thru: "8",
-  fpts: "69.7",
+  fpts: 69.7,
   ott: "2.21",
   app: "-1.1",
   arg: "1.3",

@@ -217,6 +217,31 @@ table {
     font-size: 1.2rem;
     font-weight: bold;
   }
+  .add {
+    padding: 0 0.5rem;
+    background: rgb(232, 184, 108);
+    color: rgb(25, 108, 54);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .remove {
+    padding: 0 0.5rem;
+    background: rgb(232, 184, 108);
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: none;
+  }
+  h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  .myLeaderboard {
+    margin-bottom: 2rem;
+  }
 
   .playerCard {
     background: lightgrey;
@@ -225,6 +250,7 @@ table {
     border-bottom: 2px solid black;
     padding: 0.5rem;
   }
+
   h2 {
     font-size: 1.3rem;
     padding-bottom: 0.5rem;
