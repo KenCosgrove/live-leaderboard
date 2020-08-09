@@ -204,6 +204,12 @@ table {
   .list li {
     padding: 0.1rem 0.6rem;
   }
+
+  input {
+    width: 14rem;
+    margin: 0.5rem 0 0.2rem 0;
+    padding: 0.3rem 0.2rem;
+  }
   .playerCard {
     background: lightgrey;
     display: flex;
