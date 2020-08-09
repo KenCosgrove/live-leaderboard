@@ -126,6 +126,7 @@ table {
 @media (min-width: 320px) {
   body {
     font-family: "Lato", sans-serif;
+    max-width: 100vw;
   }
 
   header {
@@ -156,12 +157,12 @@ table {
   }
 
   .menu {
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
     height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: flex-start;
     background-color: slategray;
     color: white;
   }
@@ -176,5 +177,10 @@ table {
     color: rgb(25, 108, 54);
     font-size: 1.2rem;
     font-weight: bold;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
