@@ -191,6 +191,18 @@ table {
     list-style: none;
   }
 
+  .playerCard {
+    background: lightgrey;
+    display: flex;
+    justify-content: space-around;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .top {
+    display: flex;
+  }
+
   footer {
     background: green;
   }

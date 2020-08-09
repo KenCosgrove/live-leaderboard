@@ -6,11 +6,16 @@ burger.addEventListener("click", () => {
 });
 
 function cardMaker(myObj) {
+  //variables
   const container = document.querySelector(".cards-container");
   const card = document.createElement("div");
+  const left = document.createElement("div");
+  const right = document.createElement("div");
   const name = document.createElement("h2");
   const top = document.createElement("ul");
   const bottom = document.createElement("ul");
+  const sgLeft = document.createElement("div");
+  const sgRight = document.createElement("div");
   const position = document.createElement("li");
   const score = document.createElement("li");
   const thru = document.createElement("li");
@@ -21,41 +26,50 @@ function cardMaker(myObj) {
   const put = document.createElement("li");
   const t2g = document.createElement("li");
   const tot = document.createElement("li");
-
+  // classses
+  card.classList.add("playerCard");
+  top.classList.add("top");
+  bottom.classList.add("bottom");
+  left.classList.add("left");
+  right.classList.add("right");
+  // nesting
   container.appendChild(card);
-
   card.appendChild(top);
   card.appendChild(bottom);
-  top.appendChild(position);
-  top.appendChild(name);
-  top.appendChild(score);
-  top.appendChild(thru);
-  top.appendChild(fpts);
-  bottom.appendChild(ott);
-  bottom.appendChild(app);
-  bottom.appendChild(arg);
-  bottom.appendChild(put);
-  bottom.appendChild(t2g);
-  bottom.appendChild(tot);
-
+  top.appendChild(left);
+  top.appendChild(right);
+  left.appendChild(name);
+  left.appendChild(position);
+  right.appendChild(score);
+  right.appendChild(thru);
+  right.appendChild(fpts);
+  bottom.appendChild(sgLeft);
+  bottom.appendChild(sgRight);
+  sgLeft.appendChild(ott);
+  sgLeft.appendChild(app);
+  sgLeft.appendChild(arg);
+  sgRight.appendChild(put);
+  sgRight.appendChild(t2g);
+  sgRight.appendChild(tot);
+  //content
   name.textContent = myObj.name;
   score.textContent = myObj.score;
-  position.textContent = myObj.position;
-  thru.textContent = myObj.thru;
-  fpts.textContent = myObj.fpts;
-  ott.textContent = myObj.ott;
-  app.textContent = myObj.app;
-  arg.textContent = myObj.arg;
-  put.textContent = myObj.put;
-  t2g.textContent = myObj.t2g;
-  tot.textContent = myObj.tot;
-
+  position.textContent = `Pos: ${myObj.position}`;
+  thru.textContent = `Thru: ${myObj.thru}`;
+  fpts.textContent = `fPts: ${myObj.fpts}`;
+  ott.textContent = `OTT: ${myObj.ott}`;
+  app.textContent = `APP: ${myObj.app}`;
+  arg.textContent = `ARG: ${myObj.arg}`;
+  put.textContent = `PUT: ${myObj.put}`;
+  t2g.textContent = `T2G: ${myObj.t2g}`;
+  tot.textContent = `TOT: ${myObj.tot}`;
+  //return
   return card;
 }
 
 let testObj = {
+  name: "Dicky Woods",
   position: "T3",
-  name: "dicky woods",
   score: "-4",
   thru: "8",
   fpts: "69.7",
