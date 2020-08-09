@@ -186,4 +186,12 @@ table {
     justify-content: space-evenly;
     margin: 2rem auto;
   }
+
+  .card ul {
+    list-style: none;
+  }
+
+  footer {
+    background: green;
+  }
 }
