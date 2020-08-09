@@ -191,6 +191,11 @@ table {
     list-style: none;
   }
 
+  .top li,
+  .bottom li {
+    font-size: 1.1rem;
+  }
+
   .playerCard {
     background: lightgrey;
     display: flex;
@@ -198,9 +203,19 @@ table {
   }
   h2 {
     font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
   }
   .top {
     display: flex;
+    line-height: 1.5rem;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+  .bottom {
+    width: 50%;
+    line-height: 1.5rem;
   }
 
   footer {
