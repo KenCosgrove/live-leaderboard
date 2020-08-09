@@ -178,9 +178,13 @@ table {
     font-size: 1.2rem;
     font-weight: bold;
   }
-
   section {
+    height: 60vh;
+  }
+  .top,
+  .bottom {
     display: flex;
     justify-content: space-evenly;
+    margin: 2rem auto;
   }
 }
