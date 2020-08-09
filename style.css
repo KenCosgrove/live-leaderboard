@@ -127,4 +127,25 @@ table {
   body {
     font-family: "Lato", sans-serif;
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav img {
+    height: 5rem;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  span {
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+  .dropdown {
+    /* display: none; */
+    display: flex;
+    align-items: flex-end;
+  }
 }
